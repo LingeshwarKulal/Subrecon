@@ -1,0 +1,15 @@
+# Exclude Patterns Example
+# One regex pattern per line
+# Lines starting with # are ignored
+
+# Exclude test environments
+test
+testing
+
+# Exclude internal subdomains
+internal
+private
+
+# Exclude development
+localhost
+local\.

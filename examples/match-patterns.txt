@@ -1,0 +1,14 @@
+# Match Patterns Example
+# One regex pattern per line
+# Lines starting with # are ignored
+
+# Match API subdomains
+^api\.
+
+# Match development environments
+^dev\.
+^staging\.
+
+# Match admin panels
+^admin\.
+^dashboard\.
