@@ -1,0 +1,37 @@
+﻿# SubFinder Pro - Provider Configuration Template
+# Copy this file to provider-config.yaml and add your API keys
+
+sources:
+  crtsh:
+    enabled: true
+    rate_limit: 5
+    timeout: 30
+  
+  hackertarget:
+    enabled: true
+    api_key: ""  # Get free key at https://hackertarget.com/
+    rate_limit: 2
+    timeout: 20
+  
+  threatcrowd:
+    enabled: true
+    rate_limit: 5
+    timeout: 20
+  
+  alienvault:
+    enabled: true
+    api_key: ""  # Get free key at https://otx.alienvault.com/
+    rate_limit: 10
+    timeout: 20
+  
+  urlscan:
+    enabled: true
+    api_key: ""  # Get free key at https://urlscan.io/
+    rate_limit: 5
+    timeout: 30
+
+# Environment variables (alternative to hardcoding keys):
+# Set these instead of editing this file:
+#   export ALIENVAULT_API_KEY=\"your-key\"
+#   export URLSCAN_API_KEY=\"your-key\"
+#   export HACKERTARGET_API_KEY=\"your-key\"

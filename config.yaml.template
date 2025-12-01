@@ -1,0 +1,28 @@
+﻿# SubFinder Pro - Configuration Template
+# Copy this file and customize for your needs
+
+# General settings
+timeout: 30        # Timeout in seconds for each source
+workers: 10        # Number of concurrent workers
+rate_limit: 5      # Global rate limit (requests per second)
+
+# DNS settings
+dns:
+  enabled: false   # Enable DNS verification
+  servers:
+    - "8.8.8.8:53"
+    - "1.1.1.1:53"
+  timeout: 5       # DNS query timeout
+  retry: 3         # Number of retries
+
+# Output settings
+output:
+  format: text     # Output format: text or json
+  sort: true       # Sort results alphabetically
+  unique: true     # Remove duplicate results
+
+# HTTP settings
+http:
+  user_agent: "SubFinder-Pro/1.0"
+  timeout: 10      # HTTP request timeout
+  proxy: ""        # HTTP proxy URL (optional)
